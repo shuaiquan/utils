@@ -36,3 +36,7 @@ export function isArray(value: any) {
      */
     return isFunc(Array.isArray) ? Array.isArray(value) : Object.prototype.toString.call(value) === '[object Array]';
 }
+
+export function isSymbol(value: any) {
+    return typeof value === 'symbol';
+}
