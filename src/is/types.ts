@@ -1,5 +1,7 @@
 /**
  * 基本类型的判断
+ * 
+ * (language type)(http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
  */
 
 export function isNumber(value: any) {
@@ -27,7 +29,8 @@ export function isFunc(value: any) {
 }
 
 export function isObject(value: any) {
-    return typeof value === 'object' && value !== null;
+    const type = typeof value;
+    return value !== null && (type === 'object' || type === 'function');
 }
 
 export function isArray(value: any) {
