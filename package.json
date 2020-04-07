@@ -1,0 +1,30 @@
+{
+  "name": "@s7n/utils",
+  "version": "0.0.1",
+  "description": "this are some useful function",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuaiquan/utils.git"
+  },
+  "keywords": [
+    "JS",
+    "util"
+  ],
+  "author": "shuaiquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuaiquan/utils/issues"
+  },
+  "homepage": "https://github.com/shuaiquan/utils#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  }
+}
