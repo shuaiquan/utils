@@ -4,8 +4,8 @@ import { isObject } from "../is/types";
  * 对一个对象进行深度冻结
  * @param object 要进行深度冻结的对象
  */
-export function deepFreeze(object: Object) {
-    if (!isObject) {
+export function deepFreeze<T extends Object>(object: T): T {
+    if (!isObject(object)) {
         return object;
     }
 
