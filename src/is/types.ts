@@ -51,3 +51,11 @@ export function isSymbol(value: any) {
 export function isObjectLike(value: any) {
     return value !== null && typeof value === 'object';
 }
+
+/**
+ * 定义来自 lodash : Checks if value is a plain object, that is, an object created by the Object constructor or one with a [[Prototype]] of null.
+ */
+export function isPlainObject(value: any) {
+    const prototype = Object.getPrototypeOf(value);
+    return prototype === Object.prototype || prototype === null;
+}
