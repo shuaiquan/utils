@@ -3,23 +3,23 @@ import { getValueTag, Tag } from "./typeTag";
 // 基本类型的判断
 // (language type)(http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
 
-export function isNumber(value: any) {
+export function isNumber(value: any): value is number {
     return typeof value === 'number';
 }
 
-export function isString(value: any) {
+export function isString(value: any): value is string {
     return typeof value === 'string';
 }
 
-export function isBoolean(value: any) {
+export function isBoolean(value: any): value is boolean {
     return typeof value === 'boolean';
 }
 
-export function isUndefined(value: any) {
+export function isUndefined(value: any): value is undefined {
     return value === undefined;
 }
 
-export function isNull(value: any) {
+export function isNull(value: any): value is null {
     return value === null;
 }
 
@@ -32,7 +32,7 @@ export function isObject(value: any) {
     return value !== null && (type === 'object' || type === 'function');
 }
 
-export function isArray(value: any) {
+export function isArray(value: any): value is any[] {
     /**
      * 另新语法：'isArray' in Array
      */
